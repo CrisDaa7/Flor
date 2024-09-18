@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un regalito</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background: url('img/si.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        div {
+            text-align: center; 
+        }
+
+        h1, h2 {
+            color: rgb(8, 8, 8);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 60px; 
+            animation: fadeInOut 3s infinite;
+            margin: 0; 
+        }
+
+        h2 {
+            font-size: 35px; 
+            margin-top: 10px; 
+            animation: pulse 2s infinite; 
+        }
+
+        button {
+            font-size: 16px; 
+            padding: 10px 20px; 
+            margin-top: 20px; 
+            border: none;
+            background-color: #898aec;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            border-radius: 30px; 
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); 
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Para la futura Psicóloga</h1>
+        <h2>Tengo un regalo para ti 🙈</h2>
+        <button onclick="window.location.href='rosas.html'">Ver regalo</button>
+    </div>
+</body>
+</html>
